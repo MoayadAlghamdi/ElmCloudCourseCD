@@ -1,3 +1,8 @@
+provider "azurerm" {
+  subscription_id = "634112c4-1cba-4632-b33e-c6adcf22439e"
+  features {}
+}
+
 terraform {
   required_version = ">=1.0"
 
@@ -9,10 +14,10 @@ terraform {
   }
 
   backend "azurerm" {
-        storage_account_name = "YOUR_STORAGEACCOUNT_NAME_HERE"
+        storage_account_name = "elmcloudcoursecd"
         container_name = "terraform"
         key = "terraform.tfstate"
-        access_key = "YOUR_STORAGE_ACCOUNT_KEY_HERE"
+        access_key = "a6dOLPaqHgoEipCh9KqhAPGlAVdM3zuknJzn8D5R3BjZqjh3ebbR/MCc1w2W6D0LuoQ3ICqenmzN+AStJYDwbg=="
     }
 }
 
